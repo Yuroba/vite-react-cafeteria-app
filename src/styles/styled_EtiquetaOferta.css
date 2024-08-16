@@ -41,10 +41,8 @@ img {
 }
 .title-oferta {
     position: absolute;
-    top: -10px;
-    left: 800px;
     color: #FFDC72;
-    transform: rotate(9deg);
+    transform: translate(370%, -130%) rotate(9deg);
 }
 .title-oferta h2 {
     font-size: 45px;

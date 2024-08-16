@@ -1,6 +1,6 @@
 
-import { BtnPedir } from "./btn-pedir"
-import '../styled-components/styled_etiqueta-oferta.css'
+import { BtnPedir } from "./Btns"
+import '../styles/styled_EtiquetaOferta.css'
 
 export const EtiquetaOferta = ()=>{
     return (

@@ -1,0 +1,73 @@
+
+#navbar-fixed {
+  background-color: #272F42;
+  position: fixed;
+  width: 100vw;
+  height: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  top: 0;
+  z-index: 1;
+}
+#navbar-fixed #nav-btns {
+  display: flex;
+  
+  column-gap: 30px;
+}
+#nav-btns .nav-button {
+  background-color: #82A1FF;
+  padding: 0px 15px;
+  color: white;
+  
+  font-family: Koulen;
+  text-decoration: none;
+  font-size: 17px;
+  
+}
+#nav-btns .nav-button:hover{
+  background-color: #396AFF;
+  box-shadow: 0px 0px 10px 3px #0080FF;
+}
+
+#nav-btns li {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+/* ADICIÓN DE HOME */
+/* show */
+.show-home {
+  position: absolute;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  transform: translate(-40PX, 28PX);
+  background-color: white;
+  padding: 0;
+}
+.show-home a {
+  text-decoration: none;
+  color: black;
+  font-family: Krub;
+  font-weight: bold;
+  padding: 5px 12px;
+  text-align: center;
+}
+.show-home a:hover {
+  background-color: grey;
+}
+.off-home {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  padding: 0;
+  margin: -1px;
+}

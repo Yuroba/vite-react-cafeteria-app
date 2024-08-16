@@ -1,0 +1,22 @@
+#btn-pedir {
+    background-color: #FFF174;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#btn-recommend {
+    background-color: #FFD340;
+    font-family: Koulen;
+    font-size: 23px;
+    padding: 0px 10px;
+    text-align: center;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px #000000;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border: none;
+}
+#btn-recommend:hover{
+    background-color: #FFFC40;
+    box-shadow: 0px 0px 14px 1px #FFFC40;
+    transform: scale(1.1);
+    text-shadow: 0x 6px 4px black;
+}
