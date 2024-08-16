@@ -37,10 +37,11 @@
 }
 img {
     width: 200px;
-    height: 247px;
+    height: 200px;
 }
 .title-oferta {
     position: absolute;
+
     color: #FFDC72;
     transform: translate(370%, -130%) rotate(9deg);
 }

@@ -25,7 +25,7 @@ export const Navbar = ()=>{
                     <ol className={nameClass}>
                         <li><a href="#Sedes">Sedes</a></li>
                         <li><a href="#container-ofertas">Ofertas</a></li>
-                        <li><a href="#Recomendado">Recomendado</a></li>
+                        <li><a href="#container-recommend">Recomendado</a></li>
                         <li><a href="#Promo">Promo</a></li>
                         <li><a href="#Contacto">Contacto</a></li>
                     </ol>

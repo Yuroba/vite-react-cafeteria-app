@@ -11,8 +11,14 @@ h2 {
   font-family: Koulen;
   font-weight: lighter;
 }
+h1 {
+  font-family: Koulen;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 0;
+}
 
-#container-home {
+#container-introduction {
   display: grid;
   max-width: 100vw;
   min-width: 500px;
@@ -75,7 +81,30 @@ h2 {
    rgba(0,0,0,0.5) 100%)
 }
 
-#container-catalogo {
+
+/* Contenedor de recomendados */
+#container-recommend {
+  min-height: 100vh;
   background-color: #FFEBCA;
-  height: 100vh;
+  padding: 100px 0;
 }
+#container-recommend h1 {
+  color: #FFA81C;
+  text-decoration: underline;
+  text-align: center;
+  text-shadow: 
+        1px 1px 0 black, 
+        -1px -1px 0 black, 
+        -1px 1px 0 black, 
+        1px -1px 0 black,
+        1px 0 0 black;
+  letter-spacing: 5px;
+}
+#wrapper-recommend {
+  display: flex;
+  column-gap: 50px;
+  width: 85%;
+  overflow: auto;
+  margin: 50px auto;
+}
+

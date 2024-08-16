@@ -1,0 +1,46 @@
+#container-catalogo {
+    
+    min-width: 320px;
+    height: 587px;
+    background: linear-gradient(0deg, rgba(42,1,79,0.2), rgba(42,1,79,0.2)), #926D4C;
+    display: flex;
+    flex-direction: column;
+    border-radius: 29px;
+}
+
+#wrapper-catalogo-img figure {
+    width: 220px;
+    height: 248px;
+    margin: 15px auto;
+}
+figure img {
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 5px 5px black;
+}
+#wrapper-catalogo-text {
+    text-align: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+}
+#wrapper-catalogo-text h3 {
+    font-family: Koulen;
+    background: linear-gradient(0deg, rgba(15,2,64,0.2),rgba(15,2,64,0.2)), #462D13;
+    font-size: 32px;
+    font-weight: lighter;
+    margin: 0;
+}
+#wrapper-catalogo-text > div {
+    width: 100%;
+}
+#wrapper-catalogo-text > div:nth-of-type(2) > h3{
+    font-size: 22px;
+    margin: 0 10px;
+}
+#wrapper-catalogo-text p {
+    font-family: "Kotta One";
+    margin: 15px 0;
+}
