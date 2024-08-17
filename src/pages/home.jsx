@@ -3,6 +3,7 @@ import { BtnRecommend } from '../components/Btns';
 import { EtiquetaOferta } from '../components/EtiquetaOferta';
 import { EtiquetaCatalogo } from '../components/etiquetacatalogo';
 import { EtiquetaSede } from '../components/EtiquetaSede';
+import { Foot } from '../components/footerInfo';
 
 import imagen from '../assets/pngs/lianzas1.png'
 import imggranos from '../assets/pngs/semilla-de-cafe.png'
@@ -60,12 +61,6 @@ export const Home = ()=>{
 
                 </div>
             </section>
-            <section id="sedes">
-                <div id="container-sedes">
-                    <h1>Sedes</h1>
-                    <EtiquetaSede />
-                </div>
-            </section>
             <section id="promo">
                 <div id="container-promo">
                     <div id="wrapper-promo">
@@ -80,7 +75,7 @@ export const Home = ()=>{
                     <img src={imagen}></img>
                     <img src={imagen}></img>
                 </figure>
-                <figure className="img-granos1">
+                <figure className="granos gra1">
                     <img src={imggranos}></img>
                 </figure>
                 <figure className="granos gra2">
@@ -92,9 +87,7 @@ export const Home = ()=>{
             </section>
         </main>
         <footer>
-            <div id="wrapper-info">
-
-            </div>
+            <Foot />
         </footer>
         </>
     )

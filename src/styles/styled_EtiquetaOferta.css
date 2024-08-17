@@ -16,6 +16,7 @@
     padding: 19px;
     display: flex;
     align-items: center;
+    position: relative;
 }
 
 #content-text h3 {
@@ -35,19 +36,26 @@
 #wrapper-oferta {
     display: flex;
 }
-img {
-    width: 200px;
-    height: 200px;
+#wrapper-oferta figure {
+    margin: auto;
+    width: 300px;
 }
+
 .title-oferta {
     position: absolute;
-
+    top: -10%;
+    left: 90%;
+    transform: rotate(20deg);
     color: #FFDC72;
-    transform: translate(370%, -130%) rotate(9deg);
+    
 }
 .title-oferta h2 {
+    margin: 0;
     font-size: 45px;
     font-family: "Leckerli One";
     font-weight: lighter;
+}
+#content-text {
+    width: 50%;
 }
 
