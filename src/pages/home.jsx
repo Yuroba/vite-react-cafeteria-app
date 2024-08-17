@@ -2,7 +2,11 @@ import { Navbar } from '../components/navbbar';
 import { BtnRecommend } from '../components/Btns';
 import { EtiquetaOferta } from '../components/EtiquetaOferta';
 import { EtiquetaCatalogo } from '../components/etiquetacatalogo';
+import { EtiquetaSede } from '../components/EtiquetaSede';
 
+import imagen from '../assets/pngs/lianzas1.png'
+import imggranos from '../assets/pngs/semilla-de-cafe.png'
+import imggranos2 from '../assets/pngs/Grano de cafe.png'
 
 export const Home = ()=>{
     return (
@@ -44,18 +48,54 @@ export const Home = ()=>{
                     <BtnRecommend />
                 </section>
             </section>
-            <section id="container-ofertas">
+            <section id="ofertas">
                 <EtiquetaOferta />
             </section>
-            <section id="container-recommend">
-                <h1>recommend</h1>
+            <section id="recommend">
+                <h1>Recommend</h1>
                 <div id="wrapper-recommend">
                     <EtiquetaCatalogo img="https://images.unsplash.com/photo-1481455473976-c280ae7c10f9?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" title="Express" carga="Muy cargado" />
                     <EtiquetaCatalogo img="https://images.unsplash.com/photo-1502462041640-b3d7e50d0662?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" title="biccioto" carga="Muy cargado" />
                     <EtiquetaCatalogo img="https://images.unsplash.com/photo-1486122151631-4b5aaa3ac70d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" title="prro bermudes" carga="Muy cargado" />
+
                 </div>
             </section>
+            <section id="sedes">
+                <div id="container-sedes">
+                    <h1>Sedes</h1>
+                    <EtiquetaSede />
+                </div>
+            </section>
+            <section id="promo">
+                <div id="container-promo">
+                    <div id="wrapper-promo">
+                        <h1>Consigue promos, descuentos, noticias, etc.</h1>
+                        <form action="" method="POST">
+                            <input type="email" placeholder='Your email Address' name="email"></input>
+                            <button type="submit">Suscribete</button>
+                        </form>
+                    </div>
+                </div>
+                <figure className="img-lianas">
+                    <img src={imagen}></img>
+                    <img src={imagen}></img>
+                </figure>
+                <figure className="img-granos1">
+                    <img src={imggranos}></img>
+                </figure>
+                <figure className="granos gra2">
+                    <img src={imggranos2}></img>
+                </figure>
+                <figure className="granos gra3">
+                    <img src={imggranos2}></img>
+                </figure>
+            </section>
         </main>
+        <footer>
+            <div id="wrapper-info">
+
+            </div>
+        </footer>
         </>
     )
 }

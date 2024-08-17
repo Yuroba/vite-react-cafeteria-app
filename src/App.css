@@ -12,10 +12,15 @@ h2 {
   font-weight: lighter;
 }
 h1 {
-  font-family: Koulen;
-  font-weight: bold;
-  font-size: 50px;
+  font-family: "Oregano", cursive;
+  font-weight: initial;
+  font-size: 60px;
   margin: 0;
+}
+
+figure img {
+  width: 100%;
+  height: 100%;
 }
 
 #container-introduction {
@@ -24,7 +29,7 @@ h1 {
   min-width: 500px;
   min-height: 100vh;
   grid-template-columns: 70% 30%;
-  background-color: white;
+  background-color: #FFEBCA;
 }
 #wrapper-home-img {
   display: flex;
@@ -72,7 +77,7 @@ h1 {
 
 /* Contenedor de oferta */
 
-#container-ofertas {
+#ofertas {
   height: 100vh;
   border: 3px solid black;
   display: flex;
@@ -83,28 +88,127 @@ h1 {
 
 
 /* Contenedor de recomendados */
-#container-recommend {
+#recommend {
   min-height: 100vh;
   background-color: #FFEBCA;
   padding: 100px 0;
 }
-#container-recommend h1 {
+#recommend h1 {
+  font-style: italic;
   color: #FFA81C;
   text-decoration: underline;
   text-align: center;
-  text-shadow: 
-        1px 1px 0 black, 
-        -1px -1px 0 black, 
-        -1px 1px 0 black, 
-        1px -1px 0 black,
-        1px 0 0 black;
-  letter-spacing: 5px;
+  text-shadow:
+        1px 1px 0 #FFF066, 
+        -1px -1px 0 #FFF066, 
+        -1px 1px 0 #FFF066, 
+        1px -1px 0 #FFF066,
+        1px 0 0 #FFF066,
+        1px 1px 5px black;
+  letter-spacing: 15px;
 }
 #wrapper-recommend {
   display: flex;
   column-gap: 50px;
-  width: 85%;
+  width: 70%;
   overflow: auto;
   margin: 50px auto;
+}
+
+#promo {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #210101,#100000);
+  position:relative;
+  overflow: hidden;
+}
+#container-promo {
+  width: 80vw;
+  min-height: 300px;
+  border: 1px solid black;
+  background: radial-gradient(10% 50% at 50% 70%, #FFF2A0 50%,#FF9D2E 100%,#B0631B 150%,#5F2607 300%, #210101 498% );
+  z-index: 1;
+  padding: 10px 0px;
+}
+#wrapper-promo h1 {
+  text-align: center;
+  background: linear-gradient(90deg, #FCD58B 45%, #FFFFFF 50.5%, #FCD58B 62.5%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-style: italic;
+  font-size: 50px;
+}
+
+
+
+
+#wrapper-promo form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  margin: 30px auto;
+  row-gap: 30px;
+}
+#wrapper-promo form input {
+  width: 400px;
+  height: 39px;
+}
+#wrapper-promo form button {
+  background-color: #8C4A1E;
+  border: 2px solid #FFD2A6;
+  color: #FFC250;
+  width: 150px;
+  height: 51px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.6s ease;
+}
+#wrapper-promo form button:hover {
+  background-color: #FFD2A6;
+  color: #7e5200;
+  box-shadow: 0 0 5px black;
+  transform: scale(1.03)
+}
+
+.img-lianas {
+  position: absolute;
+  width: 300px;
+  box-shadow: none;
+  z-index: 2;
+  display: flex;
+  width: 100%;
+  z-index: inherit;
+  filter: saturate(10%) brightness(20%);
+  opacity: 0.3;
+}
+
+.img-granos1 {
+  position: absolute;
+  width: 200px;
+  z-index: 1;
+  left: -100px;
+  top: 300px;
+}
+
+.granos {
+  position: absolute;
+  width: 100px;
+  z-index: 1;
+  opacity: 0.6;
+}
+.granos.gra2 {
+  left: 1400px;
+  top: 300px;
+  transform: rotate(-60deg);
+
+}
+.granos.gra3{
+  left: 1400px;
+  top: -50px;
+  transform: rotate(-1200deg);
 }
 

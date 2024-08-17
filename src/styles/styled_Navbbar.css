@@ -1,6 +1,5 @@
 
 #navbar-fixed {
-  background-color: #272F42;
   position: fixed;
   width: 100vw;
   height: 4rem;
@@ -18,7 +17,7 @@
   column-gap: 30px;
 }
 #nav-btns .nav-button {
-  background-color: #82A1FF;
+  background-color: #FF4141;
   padding: 0px 15px;
   color: white;
   
