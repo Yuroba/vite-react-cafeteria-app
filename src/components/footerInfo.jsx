@@ -4,7 +4,7 @@ export const Foot = ()=>{
     return(
         <div id="container-foot">
             <div id="wrapper-foot">
-                <section id="foot-contacto">
+                <section id="foot-contacto" className='foot'>
                     <h2>Info de contacto</h2>
                     <div className="contacto direccion">
                         <h3>Dirección</h3>
@@ -27,7 +27,7 @@ export const Foot = ()=>{
                         </ul>
                     </div>
                 </section>
-                <section id="foot-nosotros">
+                <section id="foot-nosotros" className='foot'>
                     <h2>Sobre nosotros</h2>
                     <ul>
                         <li><a>Nuestra historia</a></li>

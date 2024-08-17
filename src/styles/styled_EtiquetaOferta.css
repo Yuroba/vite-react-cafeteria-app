@@ -10,7 +10,7 @@
 
 #content-oferta {
     width: 80%;
-    height: 346px;
+    min-height: 346px;
     background: linear-gradient(0deg, rgba(69, 3, 140, 0.2), rgba(69, 3, 140, 0.2)), #591B02;
     box-shadow: -2px 10px 10px rgba(0, 0, 0, 0.47);
     padding: 19px;

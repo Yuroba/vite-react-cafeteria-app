@@ -74,23 +74,10 @@ figure img {
 }
 
 
-
-/* Contenedor de oferta */
-
-#ofertas {
-  height: 100vh;
-  border: 3px solid black;
-  display: flex;
-  align-content: center;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 26.5%,
-   rgba(0,0,0,0.5) 100%)
-}
-
-
 /* Contenedor de recomendados */
 #recommend {
   min-height: 100vh;
-  background-color: #FFEBCA;
+  background:linear-gradient(0deg, #0a0000 1%, #FFEBCA 3%);
   padding: 100px 0;
 }
 #recommend h1 {
@@ -115,12 +102,23 @@ figure img {
   margin: 50px auto;
 }
 
+/* Contenedor de oferta */
+
+#ofertas {
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 26.5%,
+   rgba(0,0,0,0.8) 100%), #210101;
+}
+
+/* Sección de promo */
 #promo {
   height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(180deg, #210101,#100000);
+  background: linear-gradient(180deg,rgb(8, 0, 0) 5%, #210101 15%,#100000);
   position:relative;
   overflow: hidden;
 }
@@ -141,9 +139,6 @@ figure img {
   font-style: italic;
   font-size: 50px;
 }
-
-
-
 
 #wrapper-promo form {
   display: flex;

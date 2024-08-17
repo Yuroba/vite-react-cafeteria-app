@@ -49,9 +49,6 @@ export const Home = ()=>{
                     <BtnRecommend />
                 </section>
             </section>
-            <section id="ofertas">
-                <EtiquetaOferta />
-            </section>
             <section id="recommend">
                 <h1>Recommend</h1>
                 <div id="wrapper-recommend">
@@ -60,6 +57,9 @@ export const Home = ()=>{
                     <EtiquetaCatalogo img="https://images.unsplash.com/photo-1486122151631-4b5aaa3ac70d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" title="prro bermudes" carga="Muy cargado" />
 
                 </div>
+            </section>
+            <section id="ofertas">
+                <EtiquetaOferta />
             </section>
             <section id="promo">
                 <div id="container-promo">
