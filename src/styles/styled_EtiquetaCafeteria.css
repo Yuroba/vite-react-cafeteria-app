@@ -1,0 +1,39 @@
+#etiqueta-cafeteria {
+    display: flex;
+    /* max-width: fit-content; */
+    column-gap: 1em;
+    max-width: 391px;
+    min-width: 300px;
+}
+#cafeteria-img {
+    width: 50%;
+
+}
+#cafeteria-img figure {
+    margin: 0;
+    height:max-content;
+}
+#cafeteria-content {
+    text-align: left;
+    max-width: 50%;
+}
+#cafeteria-content p {
+    margin: 0;
+    padding-top: 10px;
+    width: 100%;
+    min-height: 80%;
+}
+#cafeteria-content form {
+    display: flex;
+    column-gap: 5px;
+}
+#cafeteria-content input{
+    width: 50px;
+}
+#cafeteria-content button {
+    background-color: #584169;
+    color: #FFE877;
+    width: 100%;
+    max-width: 91px;
+    padding: 5px 0;
+}

@@ -1,7 +1,8 @@
 
 import { Navbar } from "../components/navbbar"
+import { EtiquetaCafeteria } from "../components/EtiquetaCafeteria"
 
-import '../styles/styled_cafeteria.css'
+import '../styles/styled_cafeteriapage.css'
 
 export const Cafeteria = ()=>{
     return(
@@ -12,42 +13,57 @@ export const Cafeteria = ()=>{
             <main>
                 <nav id="navbar-list">
                     <ul>
-                        <li><a>Pack</a></li>
-                        <li><a>Caliente</a></li>
-                        <li><a>Frio</a></li>
-                        <li><a>Desayuno</a></li>
-                        <li><a>Postre</a></li>
+                        <li><a href="#pack">Pack</a></li>
+                        <li><a href="#caliente">Caliente</a></li>
+                        <li><a href="#frio">Frio</a></li>
+                        <li><a href="#desayuno">Desayuno</a></li>
+                        <li><a href="#postre">Postre</a></li>
                     </ul>
                 </nav>
                 <section id="container-cafeteria">
                     <div id="pack">
-                        <h3>Pack</h3>
-                        <div id="wrapper-packs">
-
+                        <h1>Pack</h1>
+                        <div className="cafewrapper packs">
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
                         </div>
                     </div>
                     <div id="caliente">
-                        <h3>Caliente</h3>
-                        <div id="wrapper-packs">
-                            
+                        <h1>Caliente</h1>
+                        <div className="cafewrapper caliente">
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
                         </div>
                     </div>
                     <div id="frio">
-                        <h3>Frio</h3>
-                        <div id="wrapper-packs">
-                            
+                        <h1>Frio</h1>
+                        <div className="cafewrapper frio">
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
                         </div>
                     </div>
                     <div id="desayuno">
-                        <h3>Desayuno</h3>
-                        <div id="wrapper-packs">
-                            
+                        <h1>Desayuno</h1>
+                        <div className="cafewrapper desayuno">
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
                         </div>
                     </div>
                     <div id="postre">
-                        <h3>Postre</h3>
-                        <div id="wrapper-packs">
-                            
+                        <h1>Postre</h1>
+                        <div className="cafewrapper postre">
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
+                            <EtiquetaCafeteria />
                         </div>
                     </div>
                 </section>
