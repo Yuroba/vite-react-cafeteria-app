@@ -5,13 +5,14 @@ import './App.css'
 import { Navbar } from './components/navbbar'
 import { Home } from './pages/home'
 import { EtiquetaCatalogo } from './components/etiquetacatalogo'
+import { Cafeteria } from './pages/cafeteria'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Home/>
+      <Cafeteria/>
     </>
   )
 }

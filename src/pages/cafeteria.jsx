@@ -1,4 +1,8 @@
 
+import { Navbar } from "../components/navbbar"
+
+import '../styles/styled_cafeteria.css'
+
 export const Cafeteria = ()=>{
     return(
         <>
@@ -6,7 +10,7 @@ export const Cafeteria = ()=>{
                 <Navbar />
             </header>
             <main>
-                <div id="wrapper-list">
+                <nav id="navbar-list">
                     <ul>
                         <li><a>Pack</a></li>
                         <li><a>Caliente</a></li>
@@ -14,7 +18,7 @@ export const Cafeteria = ()=>{
                         <li><a>Desayuno</a></li>
                         <li><a>Postre</a></li>
                     </ul>
-                </div>
+                </nav>
                 <section id="container-cafeteria">
                     <div id="pack">
                         <h3>Pack</h3>
