@@ -29,6 +29,8 @@
 }
 #cafeteria-content input{
     width: 50px;
+    background-color: unset;
+    border: none;
 }
 #cafeteria-content button {
     background-color: #584169;

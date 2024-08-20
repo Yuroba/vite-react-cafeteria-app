@@ -10,7 +10,7 @@ export const Cafeteria = ()=>{
             <header>
                 <Navbar />
             </header>
-            <main>
+            <main id="main-cafeteriapage">
                 <nav id="navbar-list">
                     <ul>
                         <li><a href="#pack">Pack</a></li>
@@ -22,7 +22,9 @@ export const Cafeteria = ()=>{
                 </nav>
                 <section id="container-cafeteria">
                     <div id="pack">
-                        <h1>Pack</h1>
+                        <div>
+                            <h1>Pack</h1>
+                        </div>
                         <div className="cafewrapper packs">
                             <EtiquetaCafeteria />
                             <EtiquetaCafeteria />
@@ -31,7 +33,9 @@ export const Cafeteria = ()=>{
                         </div>
                     </div>
                     <div id="caliente">
-                        <h1>Caliente</h1>
+                        <div>
+                            <h1>Caliente</h1>
+                        </div>
                         <div className="cafewrapper caliente">
                             <EtiquetaCafeteria />
                             <EtiquetaCafeteria />
@@ -40,7 +44,9 @@ export const Cafeteria = ()=>{
                         </div>
                     </div>
                     <div id="frio">
-                        <h1>Frio</h1>
+                        <div>
+                            <h1>Frio</h1>
+                        </div>
                         <div className="cafewrapper frio">
                             <EtiquetaCafeteria />
                             <EtiquetaCafeteria />
@@ -49,7 +55,10 @@ export const Cafeteria = ()=>{
                         </div>
                     </div>
                     <div id="desayuno">
-                        <h1>Desayuno</h1>
+                        <div>
+                            <i class="fa-solid fa-utensils"></i>
+                            <h1>Desayuno</h1>
+                        </div>
                         <div className="cafewrapper desayuno">
                             <EtiquetaCafeteria />
                             <EtiquetaCafeteria />
@@ -58,7 +67,9 @@ export const Cafeteria = ()=>{
                         </div>
                     </div>
                     <div id="postre">
-                        <h1>Postre</h1>
+                        <div>
+                            <h1>Postre</h1>
+                        </div>
                         <div className="cafewrapper postre">
                             <EtiquetaCafeteria />
                             <EtiquetaCafeteria />

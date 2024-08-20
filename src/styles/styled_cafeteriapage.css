@@ -1,17 +1,16 @@
 
-main {
+#main-cafeteriapage {
     margin: 96px;
 }
 
 #container-cafeteria{
     min-width: 300px;
-    overflow: auto;
 }
 .cafewrapper {
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-auto-flow: row;
     row-gap: 10px;
+    overflow: auto;
 }
 
 #navbar-list ul {

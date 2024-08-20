@@ -1,4 +1,5 @@
 
+import { Link } from 'react-router-dom'
 import '../styles/styled_navbbar.css'
 
 import { NavButton } from "./BtnNav"
@@ -7,12 +8,14 @@ import { useState } from 'react'
 export const Navbar = ()=>{
     const [nameClass, setNameClass] = useState('off-home')
     const handleMouseEnter = () => {
-        setNameClass('show-home');
+        window.location.pathname === "/" ? setNameClass('show-home'):""
+        console.log(window.location.pathname)
     };
     
     const handleMouseLeave = () => {
         setNameClass('off-home');
     };
+    
     return (
         <nav id="navbar-fixed">
             <div id="logo">
@@ -21,7 +24,7 @@ export const Navbar = ()=>{
             <ul id="nav-btns">
                 <li onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}>
-                    <NavButton to="/#" label="home"/>
+                    <Link className='nav-button' to="/">Home</Link>
                     <ol className={nameClass}>
                         <li><a href="#Sedes">Sedes</a></li>
                         <li><a href="#ofertas">Ofertas</a></li>
@@ -31,10 +34,10 @@ export const Navbar = ()=>{
                     </ol>
                 </li>
                 <li>
-                <NavButton to="/Cafeteria" label="Cafeteria"/>
+                <Link className='nav-button' to="/Cafeteria">Cafeteria</Link>
                 </li>
                 <li>
-                <NavButton to="/Contacto" label="contactos"/>
+                <Link className='nav-button' to="/Contactos">Contactos</Link>
                 </li>
             </ul>
         </nav>
