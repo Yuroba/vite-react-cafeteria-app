@@ -16,9 +16,9 @@ export const EtiquetaCafeteria = ({title, img, precio})=>{
             <div id="cafeteria-content">
                 <p>Lorema aaaaaaaaaaaaaa aaaaaaaaaaaaaaaa aaaaaaaaa aaa
                 </p>
-                <form id="content-precio">
+                <form id="content-precio" method="POST">
                     <input value="15.00"></input>
-                    <button type="submit">Comprar</button>
+                    <button type="submit"><i class="fa-solid fa-bag-shopping"></i></button>
                 </form>
             </div>
         </div>

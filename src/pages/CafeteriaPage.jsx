@@ -21,8 +21,9 @@ export const Cafeteria = ()=>{
                     </ul>
                 </nav>
                 <section id="container-cafeteria">
-                    <div id="pack">
+                    <div id="pack" className="cafeteriacontent pack">
                         <div>
+                            <i class="fa-solid fa-boxes-packing"></i>
                             <h1>Pack</h1>
                         </div>
                         <div className="cafewrapper packs">
@@ -32,8 +33,9 @@ export const Cafeteria = ()=>{
                             <EtiquetaCafeteria />
                         </div>
                     </div>
-                    <div id="caliente">
+                    <div id="caliente" className="cafeteriacontent caliente">
                         <div>
+                            <i class="fa-solid fa-mug-hot"></i>
                             <h1>Caliente</h1>
                         </div>
                         <div className="cafewrapper caliente">
@@ -43,8 +45,9 @@ export const Cafeteria = ()=>{
                             <EtiquetaCafeteria />
                         </div>
                     </div>
-                    <div id="frio">
+                    <div id="frio" className="cafeteriacontent frio">
                         <div>
+                            <i class="fa-regular fa-snowflake"></i>
                             <h1>Frio</h1>
                         </div>
                         <div className="cafewrapper frio">
@@ -54,7 +57,7 @@ export const Cafeteria = ()=>{
                             <EtiquetaCafeteria />
                         </div>
                     </div>
-                    <div id="desayuno">
+                    <div id="desayuno" className="cafeteriacontent desayuno">
                         <div>
                             <i class="fa-solid fa-utensils"></i>
                             <h1>Desayuno</h1>
@@ -66,8 +69,9 @@ export const Cafeteria = ()=>{
                             <EtiquetaCafeteria />
                         </div>
                     </div>
-                    <div id="postre">
+                    <div id="postre" className="cafeteriacontent postre">
                         <div>
+                            <i class="fa-solid fa-ice-cream"></i>
                             <h1>Postre</h1>
                         </div>
                         <div className="cafewrapper postre">

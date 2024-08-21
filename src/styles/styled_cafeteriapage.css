@@ -21,7 +21,6 @@
     background-color: #B9A585;
     min-width: 280px;
     padding: 10px;
-    overflow: auto;
     font-size: 26px;
 
 }
@@ -30,6 +29,15 @@
     display: flex;
     align-items: flex-end;
     font-size: 0.6em;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 0 10px;
+    transition: background-color 0.1s ease, transform 0.1s ease;
+}
+#navbar-list ul li:hover {
+    background: linear-gradient(180deg, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0.8));
+    transform: translateY(30%);
+    color: white;
 }
 a {
     text-decoration: none;
@@ -49,3 +57,14 @@ a {
     font-family: 'Courier New', Courier, monospace;
 }
 
+.cafeteriacontent > div:nth-child(1) {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+    align-items: center;
+    column-gap: 10px;
+    color: #FFA81C;
+}
+.cafeteriacontent > div:nth-child(1) > i {
+    font-size: 24px;
+}
