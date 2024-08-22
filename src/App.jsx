@@ -7,6 +7,7 @@ import { Home } from './pages/HomePage'
 import { EtiquetaCatalogo } from './components/etiquetacatalogo'
 import { Cafeteria } from './pages/CafeteriaPage'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { Contacto } from './pages/ContactoPage'
 
 const router = createBrowserRouter([{
   path: "/",
@@ -14,6 +15,9 @@ const router = createBrowserRouter([{
 },{
   path: "/Cafeteria",
   element: <Cafeteria />
+},{
+  path: "/Contacto",
+  element: <Contacto />
 }])
 
 function App() {

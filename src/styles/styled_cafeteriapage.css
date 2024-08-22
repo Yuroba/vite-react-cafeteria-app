@@ -3,14 +3,26 @@
     margin: 96px;
 }
 
-#container-cafeteria{
-    min-width: 300px;
+#container-cafeteria {
+    max-width: fit-content;
+    border: 1px solid black;
+    min-height: 500px;
+    text-align: center;
+    overflow: hidden;
+    min-width: 305px;
 }
+#container-cafeteria h3{
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .cafewrapper {
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(2,1fr);
     row-gap: 10px;
+    column-gap: 10px;
     overflow: auto;
+    width: 100%;
+    
 }
 
 #navbar-list ul {
@@ -19,10 +31,11 @@
     column-gap: 10px;
     margin: 0;
     background-color: #B9A585;
-    min-width: 280px;
+    width: 100%;
+    min-width: 305px;
     padding: 10px;
     font-size: 26px;
-
+    overflow: auto;
 }
 
 #navbar-list ul li {
@@ -47,15 +60,7 @@ a {
 #navbar-list ul li:first-child{
     font-size: 0.9em;
 }
-#container-cafeteria {
-    width: 100%;
-    border: 1px solid black;
-    min-height: 500px;
-    text-align: center;
-}
-#container-cafeteria h3{
-    font-family: 'Courier New', Courier, monospace;
-}
+
 
 .cafeteriacontent > div:nth-child(1) {
     display: flex;
@@ -67,4 +72,13 @@ a {
 }
 .cafeteriacontent > div:nth-child(1) > i {
     font-size: 24px;
+}
+#main-container {
+    display: flex;
+    column-gap: 15px;
+}
+
+.cart-container {
+    position: sticky;
+    top: 0;
 }
