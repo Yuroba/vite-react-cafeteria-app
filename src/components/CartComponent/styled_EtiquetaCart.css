@@ -27,7 +27,7 @@
     margin: 5px 0px;
     padding: 3px 0px;
 }
-.cart-items .item p:nth-child(2){
+.cart-items .item > div{
     display: flex;
     justify-content: space-between;
     width: 100%;

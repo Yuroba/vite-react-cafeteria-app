@@ -26,7 +26,15 @@ export const Cafeteria = ()=>{
     
     const [cartitem, setChangeCartItem] = useState([])
     function addToCart(item){
-        setChangeCartItem([...cartitem, item])
+        const existingItem = cartitem.findIndex(itemcart => itemcart.title === item.title)
+        if (existingItem !== -1) {
+            const updateItem = [...cartitem];
+            console.log(updateItem)
+            updateItem[existingItem].quantity += 1
+            setChangeCartItem([...updateItem])
+        } else {
+            setChangeCartItem([...cartitem, {...item, quantity:1}])
+        }
     }
     return(
         <>

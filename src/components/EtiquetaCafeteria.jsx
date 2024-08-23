@@ -2,9 +2,9 @@
 
 import '../styles/styled_EtiquetaCafeteria.css'
 
-export const EtiquetaCafeteria = ({title="cafe", img, precio="10.00", addToCart})=>{
+export const EtiquetaCafeteria = ({title="cafe", quantity=0, precio="10.00", addToCart})=>{
     const handleAddToCart = ()=> {
-        const item = { title, precio};
+        const item = { title, quantity, precio};
         addToCart(item)
     }
     return(
