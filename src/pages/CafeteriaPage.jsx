@@ -3,9 +3,31 @@ import { Navbar } from "../components/navbbar"
 import { EtiquetaCafeteria } from "../components/EtiquetaCafeteria"
 
 import '../styles/styled_cafeteriapage.css'
-import { EtiquetaCart } from "../components/EtiquetaCart"
+import { EtiquetaCart } from "../components/CartComponent/EtiquetaCart"
+import { SubCartShop } from "../components/CartComponent/SubEtiquetaCartShop"
+import { useState } from "react"
+
+
 
 export const Cafeteria = ()=>{
+    const [showBuy, changeShow] = useState('off-shopcart')
+    function handleShow(){
+        if (showBuy === 'off-shopcart') {
+            const itemList = [...document.querySelectorAll('.cart-items .item')];
+            console.log(itemList)
+            itemList.length > 0 ? changeShow('show-shopcart') : ""
+        } else {
+            const itemList = [...document.querySelectorAll('.cart-items .item')];
+            console.log(itemList)
+            itemList.length > 0 ? changeShow('off-shopcart') : ""
+        }
+
+    }
+    
+    const [cartitem, setChangeCartItem] = useState([])
+    function addToCart(item){
+        setChangeCartItem([...cartitem, item])
+    }
     return(
         <>
             <header>
@@ -29,10 +51,10 @@ export const Cafeteria = ()=>{
                                 <h1>Pack</h1>
                             </div>
                             <div className="cafewrapper packs">
-                                <EtiquetaCafeteria />
-                                <EtiquetaCafeteria />
-                                <EtiquetaCafeteria />
-                                <EtiquetaCafeteria />
+                                <EtiquetaCafeteria title="Cafe Express" precio="15.00" addToCart={addToCart}/>
+                                <EtiquetaCafeteria addToCart={addToCart}/>
+                                <EtiquetaCafeteria addToCart={addToCart}/>
+                                <EtiquetaCafeteria title="Cafe Express" precio="15.00" addToCart={addToCart}/>
                             </div>
                         </div>
                         <div id="caliente" className="cafeteriacontent caliente">
@@ -41,10 +63,10 @@ export const Cafeteria = ()=>{
                                 <h1>Caliente</h1>
                             </div>
                             <div className="cafewrapper caliente">
-                                <EtiquetaCafeteria />
-                                <EtiquetaCafeteria />
-                                <EtiquetaCafeteria />
-                                <EtiquetaCafeteria />
+                                <EtiquetaCafeteria addToCart={addToCart}/>
+                                <EtiquetaCafeteria addToCart={addToCart}/>
+                                <EtiquetaCafeteria addToCart={addToCart}/>
+                                <EtiquetaCafeteria addToCart={addToCart}/>
                             </div>
                         </div>
                         <div id="frio" className="cafeteriacontent frio">
@@ -84,9 +106,10 @@ export const Cafeteria = ()=>{
                             </div>
                         </div>
                     </section>
-                    <EtiquetaCart />
+                    <EtiquetaCart click={handleShow} items={cartitem}/>
                     
                 </section>
+                <SubCartShop click={handleShow} classnombre={showBuy}/>
             </main>
         </>
     )

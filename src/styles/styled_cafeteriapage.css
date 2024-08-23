@@ -5,7 +5,6 @@
 
 #container-cafeteria {
     max-width: fit-content;
-    border: 1px solid black;
     min-height: 500px;
     text-align: center;
     overflow: hidden;
@@ -22,7 +21,7 @@
     column-gap: 10px;
     overflow: auto;
     width: 100%;
-    
+    margin: 10px 0px;
 }
 
 #navbar-list ul {
@@ -64,11 +63,11 @@ a {
 
 .cafeteriacontent > div:nth-child(1) {
     display: flex;
-    width: fit-content;
-    margin: 0 auto;
     align-items: center;
+    justify-content: center;
     column-gap: 10px;
     color: #FFA81C;
+    background-color: #FFF275;
 }
 .cafeteriacontent > div:nth-child(1) > i {
     font-size: 24px;
@@ -80,5 +79,5 @@ a {
 
 .cart-container {
     position: sticky;
-    top: 0;
+    top: 60px;
 }

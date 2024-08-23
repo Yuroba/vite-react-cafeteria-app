@@ -17,6 +17,10 @@
     column-gap: 5px;
     font-size: 20px;
 }
+.cart-items {
+    max-height: 400px;
+    overflow: auto;
+}
 .cart-items .item {
     display: flex;
     justify-content: space-between;
