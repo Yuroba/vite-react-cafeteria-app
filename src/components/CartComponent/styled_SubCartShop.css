@@ -21,6 +21,7 @@
 
 #shop-cart p {
     margin: 0;
+    font-family: "Kotta One", serif;
 }
 #shop-cart .item {
     background-color: #E4E4E4;
@@ -32,6 +33,9 @@
     border-top: 1px solid black;
     margin: 10px 0px;
 }
+#shop-cart .cart-resume p:nth-child(2) {
+    font-size: 26px;
+}
 #shop-cart #cartbtns {
     display: flex;
     flex-direction: column;
@@ -42,19 +46,18 @@
     display: blocK;
     padding: 5px 5px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 15px;
 }
 #shop-cart #cartbtns .cartbtn:nth-child(1) {
     background-color: #DCFF89;
-    border: none;
+
 }
 #shop-cart #cartbtns .cartbtn:nth-child(2) {
     background-color: black;
-    border: none;
     color: white;
 }
 
-.off-shopcart {
+.off-shopbuycart {
     border: 0;
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(50%);

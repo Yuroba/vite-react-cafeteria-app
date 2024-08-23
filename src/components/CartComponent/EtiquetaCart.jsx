@@ -12,15 +12,8 @@ export const EtiquetaCart = ({items, click})=>{
                 <h3>Carrito</h3>
             </div>
             <div className="cart-items">
-                <div className="item cart1">
-                    <p>Cafe express</p>
-                    <div>
-                        <p>x1</p>
-                        <span>15.00</span>
-                    </div> 
-                </div> 
                 {items.map((item,m) => (
-                <div className="item cart1">
+                <div className={`item cart` + (m+1).toString()}>
                     <p>{item.title}</p>
                     <div>
                         <p>x{item.quantity}</p>

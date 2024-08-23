@@ -1,6 +1,6 @@
 .cart-container h3,.cart-container p {
     margin: 0;
-
+    font-family: "Kotta One", serif;
 }
 .cart-container {
     background-color: white;
@@ -43,4 +43,29 @@
 }
 .cart-options i {
     font-size: 24px;
+}
+.cart-options .buy {
+    color: yellow;
+    text-shadow: 
+        1px 1px 0 black, 
+        -1px -1px 0 black, 
+        -1px 1px 0 black, 
+        1px -1px 0 black,
+        1px 0 0 black;
+}
+.cart-options .delete {
+    color: lightyellow;
+    text-shadow: 
+        1px 1px 0 black, 
+        -1px -1px 0 black, 
+        -1px 1px 0 black, 
+        1px -1px 0 black,
+        1px 0 0 black;
+}
+.cart-options button {
+    background-color: unset;
+    border: none;
+}
+.cart-options button:hover {
+    background-color: grey;
 }

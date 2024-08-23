@@ -1,28 +1,23 @@
 import './styled_SubCartShop.css'
-export const SubCartShop = ({classnombre, click})=>{
+export const SubCartShop = ({changeShow, click, items})=>{
     return(
-        <page id="page-shop-cart" className={classnombre}>
+        <page id="page-shop-cart" className={changeShow}>
             <section id="shop-cart">
                 <div className='icon-exit'>
                     <i onClick={click} class="fa-solid fa-xmark"></i>
                 </div>
                 <div className="cart-items">
-                    <div className="item cart1">
-                        <p>Cafe express</p>
-                        <p>x1 <span>15.00</span></p>
-                    </div>
-                    <div className="item cart2">
-                        <p>Cafe express</p>
-                        <p>x1 <span>15.00</span></p>
-                    </div>
-                    <div className="item cart3">
-                        <p>Cafe express</p>
-                        <p>x1 <span>15.00</span></p>
-                    </div>
+                    {items.map((item,m)=> (
+                        <div className={`item cart` + (m+1).toString()}>
+                            <p>{item.title}</p>
+                            <p>x{item.quantity} <span>{item.precio}</span></p>
+                        </div>
+                    ))}
                 </div>
                 <div className="cart-resume">
                     <p>Precio</p>
-                    <p>45.00</p>
+                    <p>{items.map(item => parseFloat(item.precio) * parseFloat(item.quantity))
+                    .reduce((acc,el) => (parseFloat(acc)+parseFloat(el)).toFixed(2), 0.00)}</p>
                 </div>
                 <div id="cartbtns">
                     <button className="cartbtn domicilio"><i class="fa-solid fa-truck"></i>Pedir a domicilio</button>

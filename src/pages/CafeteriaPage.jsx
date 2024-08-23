@@ -10,16 +10,15 @@ import { useState } from "react"
 
 
 export const Cafeteria = ()=>{
-    const [showBuy, changeShow] = useState('off-shopcart')
+    const [showBuy, changeShow] = useState('off-shopbuycart')
     function handleShow(){
-        if (showBuy === 'off-shopcart') {
-            const itemList = [...document.querySelectorAll('.cart-items .item')];
+        const itemList = [...document.querySelectorAll('.cart-items .item')];
+        if (showBuy === 'off-shopbuycart') {
             console.log(itemList)
-            itemList.length > 0 ? changeShow('show-shopcart') : ""
+            itemList.length > 0 ? changeShow('show-shopbuycart') : ""
         } else {
-            const itemList = [...document.querySelectorAll('.cart-items .item')];
             console.log(itemList)
-            itemList.length > 0 ? changeShow('off-shopcart') : ""
+            itemList.length > 0 ? changeShow('off-shopbuycart') : ""
         }
 
     }
@@ -59,7 +58,7 @@ export const Cafeteria = ()=>{
                                 <h1>Pack</h1>
                             </div>
                             <div className="cafewrapper packs">
-                                <EtiquetaCafeteria title="Cafe Express" precio="15.00" addToCart={addToCart}/>
+                                <EtiquetaCafeteria title="Cafe Express" precio="15.30" addToCart={addToCart}/>
                                 <EtiquetaCafeteria addToCart={addToCart}/>
                                 <EtiquetaCafeteria addToCart={addToCart}/>
                                 <EtiquetaCafeteria title="Cafe Express" precio="15.00" addToCart={addToCart}/>
@@ -117,7 +116,7 @@ export const Cafeteria = ()=>{
                     <EtiquetaCart click={handleShow} items={cartitem}/>
                     
                 </section>
-                <SubCartShop click={handleShow} classnombre={showBuy}/>
+                <SubCartShop click={handleShow} items={cartitem} changeShow={showBuy}/>
             </main>
         </>
     )
