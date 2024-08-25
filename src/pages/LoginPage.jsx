@@ -1,4 +1,5 @@
-
+import { Link } from 'react-router-dom'
+import '../styles/styled_loginpage.css'
 export const LoginPage = ()=>{
     return (
         <>
@@ -6,6 +7,7 @@ export const LoginPage = ()=>{
             <section id="container-ingreso">
                 <div id="ingreso-title">
                     <h3>ingresar</h3>
+                    <Link to="/"><i class="fa-solid fa-right-from-bracket"></i></Link>
                 </div>
                 <form id="loginform-container">
                     <div id="loginentry-container">
@@ -16,7 +18,7 @@ export const LoginPage = ()=>{
                     </div>
                     <div id="btnlogin-container">
                         <button type="submit">Ingresar</button>
-                        <button type="button">Crear cuenta</button>
+                        <Link to="/Register">Crear</Link>
                     </div>
                 </form>
             </section>

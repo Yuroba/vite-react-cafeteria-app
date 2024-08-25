@@ -5,6 +5,7 @@ export const RegisterPage = ()=>{
             <section id="container-registro">
                 <div id="registro-title">
                     <h3>Registrar</h3>
+                    <i class="fa-solid fa-right-from-bracket"></i>
                 </div>
                 <form id="registroform-container">
                     <div id="registroentry-container">
