@@ -5,10 +5,15 @@
     position:relative;
 }
 #wrapper-foot {
-    color: #FFEAD8;
     display: flex;
     column-gap: 50px;
     padding: 0 10px;
+}
+#wrapper-foot a, #wrapper-foot h2, #wrapper-foot h3, #wrapper-foot li {
+    color: #FFEAD8;
+}
+#foot-nosotros li {
+    list-style: circle;
 }
 .contacto h3{
     color: #FFEAD8;

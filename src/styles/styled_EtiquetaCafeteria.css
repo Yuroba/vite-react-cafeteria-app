@@ -23,10 +23,7 @@
     width: 100%;
     min-height: 80%;
 }
-#cafeteria-content form {
-    display: flex;
-    column-gap: 5px;
-}
+
 #cafeteria-content input{
     width: 50px;
     background-color: unset;

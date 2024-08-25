@@ -6,6 +6,8 @@ import '../styles/styled_cafeteriapage.css'
 import { EtiquetaCart } from "../components/CartComponent/EtiquetaCart"
 import { SubCartShop } from "../components/CartComponent/SubEtiquetaCartShop"
 import { useState } from "react"
+import { ScrollToTop } from "../components/ScrollTop"
+import { Foot } from "../components/footerInfo"
 
 
 
@@ -37,6 +39,7 @@ export const Cafeteria = ()=>{
     }
     return(
         <>
+        <ScrollToTop />
             <header>
                 <Navbar />
             </header>
@@ -118,6 +121,9 @@ export const Cafeteria = ()=>{
                 </section>
                 <SubCartShop click={handleShow} items={cartitem} changeShow={showBuy}/>
             </main>
+            <footer>
+                <Foot />
+            </footer>
         </>
     )
 }

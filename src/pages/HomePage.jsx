@@ -8,10 +8,12 @@ import { Foot } from '../components/footerInfo';
 import imagen from '../assets/pngs/lianzas1.png'
 import imggranos from '../assets/pngs/semilla-de-cafe.png'
 import imggranos2 from '../assets/pngs/Grano de cafe.png'
+import { ScrollToTop } from '../components/ScrollTop';
 
 export const Home = ()=>{
     return (
         <>
+        <ScrollToTop />
         <header>
             <Navbar />
         </header>
