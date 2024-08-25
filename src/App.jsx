@@ -8,6 +8,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import { Contacto } from './pages/ContactoPage'
 import { ScrollToTop } from './components/ScrollTop'
 import { Sedes } from './pages/SedesPage'
+import { LoginPage } from './pages/LoginPage'
 
 const router = createBrowserRouter([{
   path: "/",
@@ -21,6 +22,9 @@ const router = createBrowserRouter([{
 },{
   path: "/Sedes",
   element: <Sedes />
+},{
+  path: "/Login",
+  element: <LoginPage />
 }])
 
 function App() {

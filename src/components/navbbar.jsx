@@ -40,7 +40,7 @@ export const Navbar = ()=>{
                 <Link className='nav-button' to="/Sedes">Sedes</Link>
                 </li>
                 <li>
-                <Link className='nav-button' to="/Account">Cuenta</Link>
+                <Link className='nav-button' to="/Login">Cuenta</Link>
                 </li>
             </ul>
         </nav>
