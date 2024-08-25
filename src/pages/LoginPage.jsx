@@ -4,17 +4,17 @@ export const LoginPage = ()=>{
         <>
         <main id="main-loginpage">
             <section id="container-ingreso">
-                <div id="container-title">
+                <div id="ingreso-title">
                     <h3>ingresar</h3>
                 </div>
                 <form id="loginform-container">
                     <div id="loginentry-container">
-                        <label for="entryusuario">Correo/usuario</label>
-                        <input type="text" required name="entryusuario" id="entryusuario" aria-label="Correo o usuario"/>
-                        <label for="entrypassword">Contraseña</label>
-                        <input type="password" name="entrypassword" id="entrypassword" aria-label="Contraseña"/>
+                        <label for="loginusuario">Correo/usuario</label>
+                        <input type="text" required name="entryloginusuario" id="loginusuario" aria-label="Correo o usuario"/>
+                        <label for="loginpassword">Contraseña</label>
+                        <input type="password" name="entryloginpassword" id="loginpassword" aria-label="Contraseña"/>
                     </div>
-                    <div id="btnform-container">
+                    <div id="btnlogin-container">
                         <button type="submit">Ingresar</button>
                         <button type="button">Crear cuenta</button>
                     </div>
