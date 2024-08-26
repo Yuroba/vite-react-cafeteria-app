@@ -1,0 +1,52 @@
+
+#main-registerpage {
+    height: 100vh;
+    padding: 100px 0;
+    background-color: white;
+}
+
+#main-registerpage h3 {
+    margin: 0;
+    font-family: "Roboto Condensed";
+}
+
+#container-registro {
+    background-color: white;
+    max-width: 371px;
+    min-width: 152px;
+    padding: 20px 13px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    align-items: center;
+    margin: auto;
+    box-shadow: 4px 4px 5px black;
+}
+#container-registro #registro-title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+#registroform-container {
+    width: 100%;
+}
+
+#registroform-container #registroentry-container label {
+    display: block;
+    margin: 10px 0;
+    font-family: Georama, sans-serif;
+}
+#btnregister-container button {
+    display: block;
+    background-color: black;
+    color: white;
+    margin: 10px auto 0;
+    cursor: pointer;
+}
+#btnregister-container button:hover {
+    background-color: rgb(48, 47, 47);
+}
+#btnregister-container button:active {
+    transform: scale(1.02)
+}

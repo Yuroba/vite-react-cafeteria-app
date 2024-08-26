@@ -6,7 +6,7 @@ export const LoginPage = ()=>{
         <main id="main-loginpage">
             <section id="container-ingreso">
                 <div id="ingreso-title">
-                    <h3>ingresar</h3>
+                    <h3>Ingresar</h3>
                     <Link to="/"><i class="fa-solid fa-right-from-bracket"></i></Link>
                 </div>
                 <form id="loginform-container">
@@ -14,7 +14,7 @@ export const LoginPage = ()=>{
                         <label for="loginusuario">Correo/usuario</label>
                         <input type="text" required name="entryloginusuario" id="loginusuario" aria-label="Correo o usuario"/>
                         <label for="loginpassword">Contraseña</label>
-                        <input type="password" name="entryloginpassword" id="loginpassword" aria-label="Contraseña"/>
+                        <input type="password" required name="entryloginpassword" id="loginpassword" aria-label="Contraseña"/>
                     </div>
                     <div id="btnlogin-container">
                         <button type="submit">Ingresar</button>

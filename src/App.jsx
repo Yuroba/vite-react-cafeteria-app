@@ -1,6 +1,5 @@
 import { useState } from 'react'
 import './App.css'
-import { Navbar } from './components/navbbar'
 import { Home } from './pages/HomePage'
 import { EtiquetaCatalogo } from './components/etiquetacatalogo'
 import { Cafeteria } from './pages/CafeteriaPage'
@@ -9,6 +8,7 @@ import { Contacto } from './pages/ContactoPage'
 import { ScrollToTop } from './components/ScrollTop'
 import { Sedes } from './pages/SedesPage'
 import { LoginPage } from './pages/LoginPage'
+import { RegisterPage } from './pages/RegisterPage'
 
 const router = createBrowserRouter([{
   path: "/",
@@ -25,6 +25,9 @@ const router = createBrowserRouter([{
 },{
   path: "/Login",
   element: <LoginPage />
+}, {
+  path: "/Register",
+  element: <RegisterPage />
 }])
 
 function App() {
