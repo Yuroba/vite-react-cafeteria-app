@@ -15,11 +15,11 @@ export const Sedes = ()=>{
                 </div>
                 <section id="container-sedespage">
                     <div id="container-sedes">
-                        <EtiquetaSede />
-                        <EtiquetaSede />
-                        <EtiquetaSede />
-                        <EtiquetaSede />
-                        <EtiquetaSede />
+                        <EtiquetaSede id="sede1"/>
+                        <EtiquetaSede id="sede2" />
+                        <EtiquetaSede id="sede3"/>
+                        <EtiquetaSede id="sede4"/>
+                        <EtiquetaSede id="sede5"/>
                     </div>
                     <div id="container-map">
 

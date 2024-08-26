@@ -7,7 +7,6 @@
     max-width: 534px;
     min-width: 300px;
     height: min-content;
-    padding: 10px 0px 20px;
     border-radius: 8px;
     box-shadow: 0px 0px 5px black;
     border: 1px solid #86430f
@@ -33,3 +32,16 @@
     margin: 10px 5px 0;
 
 }
+.wrapper-sede input[type="radio"] {
+    display: none;
+}
+
+.wrapper-sede input[type="radio"]:checked + label {
+    background-color: lightblue;
+    border: blue;
+}
+.wrapper-sede label {
+    display: block;
+    padding: 10px;
+    cursor: pointer;
+  }
