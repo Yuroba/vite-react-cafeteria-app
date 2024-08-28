@@ -17,6 +17,7 @@
     height: 400px;
     overflow: auto;
     width:50%;
+    min-width: 325px;
     padding: 15px 5px;
     background-color: #FFEFD5;
     align-items: center;

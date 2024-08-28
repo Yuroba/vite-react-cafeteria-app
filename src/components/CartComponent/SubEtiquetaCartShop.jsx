@@ -1,4 +1,7 @@
+import { Link } from 'react-router-dom'
 import './styled_SubCartShop.css'
+
+
 export const SubCartShop = ({changeShow, click, items})=>{
     return(
         <page id="page-shop-cart" className={changeShow}>
@@ -20,8 +23,8 @@ export const SubCartShop = ({changeShow, click, items})=>{
                     .reduce((acc,el) => (parseFloat(acc)+parseFloat(el)).toFixed(2), 0.00)}</p>
                 </div>
                 <div id="cartbtns">
-                    <button className="cartbtn domicilio"><i class="fa-solid fa-truck"></i>Pedir a domicilio</button>
-                    <button className="cartbtn cuenta">Ingresa con tu cuenta</button>
+                    <Link className="cartbtn domicilio" to='/Checkout' state={{items: items}}><i class="fa-solid fa-truck"></i>Pedir a domicilio</Link>
+                    <Link className="cartbtn cuenta" to="/Login">Ingresa con tu cuenta</Link>
                 </div>
             </section>
         </page>

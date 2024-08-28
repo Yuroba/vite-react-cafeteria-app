@@ -1,0 +1,50 @@
+
+#main-checkoutpage {
+    display: flex;
+    padding: 80px 96px
+}
+#checkout-personal {
+    background-color: white;
+    widtH: 630px;
+    height: 434px;
+    padding: 0 10px 10px;
+}
+
+#checkout-personal #container-personal #wrapper-personal {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    padding: 0 10px;
+}
+#container-personal label, #container-direccion label {
+    display: block;
+}
+
+#wrapper-personal div {
+    width: 269px;
+}
+#container-direccion div {
+    width: 300px;
+}
+#container-personal div input, #container-direccion div input {
+    width: 100%;
+    height: 26px;
+    background-color: #E9E9E9;
+    margin-top: 5px;
+    border: 1px solid black;
+}
+#container-direccion div input {
+    width: 80%;
+    margin-right: 10px;
+}
+#container-direccion div button {
+    background-color: yellow;
+    border: 1px solid black;
+}
+#container-direccion div button:hover {
+    background-color: lightyellow;
+}
+#container-direccion div button:active {
+    transform: scale(1.05);
+}

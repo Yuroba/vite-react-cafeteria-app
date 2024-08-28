@@ -37,7 +37,7 @@
 }
 
 .wrapper-sede input[type="radio"]:checked + label {
-    background-color: lightblue;
+    background-color: #FFF8C3;
     border: blue;
 }
 .wrapper-sede label {

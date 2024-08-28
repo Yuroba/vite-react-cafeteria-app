@@ -52,7 +52,7 @@
     margin: 0 auto;
     justify-content: space-between;
 }
-#btnlogin-container a,
+#btnlogin-container a, #btnlogin-container
 button {
     width: 100%;
     max-width: 124px;

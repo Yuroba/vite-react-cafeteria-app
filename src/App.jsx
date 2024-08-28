@@ -9,13 +9,17 @@ import { ScrollToTop } from './components/ScrollTop'
 import { Sedes } from './pages/SedesPage'
 import { LoginPage } from './pages/LoginPage'
 import { RegisterPage } from './pages/RegisterPage'
+import { CheckoutPage } from './pages/CheckoutPage'
 
 const router = createBrowserRouter([{
   path: "/",
   element:<Home />
 },{
   path: "/Cafeteria",
-  element: <Cafeteria />
+  element: <Cafeteria />,
+},{
+  path: "Checkout",
+  element: <CheckoutPage />
 },{
   path: "/Contacto",
   element: <Contacto />
