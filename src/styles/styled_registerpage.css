@@ -34,8 +34,12 @@
 
 #registroform-container #registroentry-container label {
     display: block;
-    margin: 10px 0;
+    margin: 15px 0 5px;
     font-family: Georama, sans-serif;
+}
+#registroform-container #registroentry-container input {
+    height: 1.8rem;
+    width: 100%;
 }
 #btnregister-container button {
     display: block;
@@ -43,6 +47,7 @@
     color: white;
     margin: 10px auto 0;
     cursor: pointer;
+    height: 2rem;
 }
 #btnregister-container button:hover {
     background-color: rgb(48, 47, 47);

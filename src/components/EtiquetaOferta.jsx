@@ -1,8 +1,23 @@
 
+import React, {useState, useRef, useEffect} from "react"
 import { BtnPedir } from "./Btns"
 import '../styles/styled_EtiquetaOferta.css'
 
 export const EtiquetaOferta = ()=>{
+    const [checkObserve, setCheckObserve] = useState(false)
+
+    const ofertaCheck = useRef(null)
+    function checkOferta(entry){
+        console.log(entry)
+    }
+
+    const options = {
+        root: null,
+        rootMargin: "0px",
+        threshold: 1
+    }
+    const observer = new IntersectionObserver(checkOferta, options)
+    observer.observe(ofertaCheck)
     return (
         <div id="container-oferta">
             <div id="content-oferta">

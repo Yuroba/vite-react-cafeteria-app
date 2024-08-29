@@ -4,6 +4,7 @@
     column-gap: 1em;
     max-width: 391px;
     min-width: 300px;
+    
 }
 #cafeteria-img {
     width: 50%;
@@ -30,16 +31,22 @@
     border: none;
 }
 #cafeteria-content button {
-    background-color: black;
-    color: white;
+    background-color: #ffe760;
+    color: black;
     max-width: 91px;
     padding: 5px 15px;
-    border: none;
+    border: 1px solid black;
     font-size: 20px;
+    box-shadow: 0px 2px 1px black;
 }
 #cafeteria-content button:hover {
-    background-color: rgb(63, 62, 62);
+    background-color: rgb(255, 155, 40);
 }
 #cafeteria-content button:active {
     transform: scale(0.9);
+}
+#cafeteria-content > div > input {
+    font-family: "Kotta One";
+    font-weight: bold;
+    font-size: 16px;
 }

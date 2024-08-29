@@ -4,12 +4,41 @@
 body {
   margin: 0;
   height: 100vh;
-  background-color: #FFEBCA; /* #461414 */
+  background-color:  #FFEBCA;
+  scroll-behavior: smooth;
+  scrollbar-color: #30333a #94a9b6; 
 }
+html {
+  scrollbar-width: auto;
+  scrollbar-color: #888 #f0f0f0; 
+  scroll-behavior: smooth;
+}
+/*
+::-webkit-scrollbar {
+  width: 12px; 
+  height: 12px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0; 
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #888; 
+  border-radius: 10px;
+  border: 2px solid #f0f0f0; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #555; 
+}
+*/
 
 h2 {
   font-family: Koulen;
   font-weight: lighter;
+  margin: 0;
 }
 h1 {
   font-family: "Oregano", cursive;
@@ -23,187 +52,4 @@ figure img {
   height: 100%;
 }
 
-#container-introduction {
-  display: grid;
-  max-width: 100vw;
-  min-width: 500px;
-  min-height: 100vh;
-  grid-template-columns: 70% 30%;
-  background-color: #FFEBCA;
-}
-#wrapper-home-img {
-  display: flex;
-  background-color: #3A2C26;
-  justify-content: center;
-  overflow: hidden;
-  height: 100vh;
-}
-#wrapper-home-img img {
-  
-  width: 380px;
-  height: 800px;
-  transform: rotate(15deg);
-  z-index: 0;
-
-}
-#wrapper-home-img img:last-of-type{
-  filter: blur(2px) drop-shadow(0px 4px 37.1px rgba(152, 101, 62, 0.35));
-}
-#wrapper-home-entrada {
-  position: absolute;
-  max-width: 392px;
-  min-width: 300px;
-  top: 50%;
-  left: 40%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255,255,255,0.9);
-  padding: 0px 20px;
-}
-#container-home-text {
-  margin-top: 60px;
-  padding: 0px 10px;
-  text-align: center;
-}
-#wrapper-home-text {
-  display: flex;
-  flex-direction: column;
-  row-gap: 50px;
-}
-#container-home-text #btn-recommend {
-  margin-top: 30px;
-}
-
-
-/* Contenedor de recomendados */
-#recommend {
-  min-height: 100vh;
-  background:linear-gradient(0deg, #0a0000 1%, #FFEBCA 3%);
-  padding: 100px 0;
-}
-#recommend h1 {
-  font-style: italic;
-  color: #FFA81C;
-  text-decoration: underline;
-  text-align: center;
-  text-shadow:
-        1px 1px 0 #FFF066, 
-        -1px -1px 0 #FFF066, 
-        -1px 1px 0 #FFF066, 
-        1px -1px 0 #FFF066,
-        1px 0 0 #FFF066,
-        1px 1px 5px black;
-  letter-spacing: 15px;
-}
-#wrapper-recommend {
-  display: flex;
-  column-gap: 50px;
-  width: 70%;
-  overflow: auto;
-  margin: 50px auto;
-}
-
-/* Contenedor de oferta */
-
-#ofertas {
-  height: 100vh;
-  display: flex;
-  align-content: center;
-  background: radial-gradient(50% 50% at 50% 50%, rgba(0, 0, 0, 0) 26.5%,
-   rgba(0,0,0,0.8) 100%), #210101;
-}
-
-/* Sección de promo */
-#promo {
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: linear-gradient(180deg,rgb(8, 0, 0) 5%, #210101 15%,#100000);
-  position:relative;
-  overflow: hidden;
-}
-#container-promo {
-  width: 80vw;
-  min-height: 300px;
-  border: 1px solid black;
-  background: radial-gradient(10% 50% at 50% 70%, #FFF2A0 50%,#FF9D2E 100%,#B0631B 150%,#5F2607 300%, #210101 498% );
-  z-index: 1;
-  padding: 10px 0px;
-}
-#wrapper-promo h1 {
-  text-align: center;
-  background: linear-gradient(90deg, #FCD58B 45%, #FFFFFF 50.5%, #FCD58B 62.5%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  font-style: italic;
-  font-size: 50px;
-}
-
-#wrapper-promo form {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  align-items: center;
-  margin: 30px auto;
-  row-gap: 30px;
-}
-#wrapper-promo form input {
-  width: 400px;
-  height: 39px;
-}
-#wrapper-promo form button {
-  background-color: #8C4A1E;
-  border: 2px solid #FFD2A6;
-  color: #FFC250;
-  width: 150px;
-  height: 51px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.6s ease;
-}
-#wrapper-promo form button:hover {
-  background-color: #FFD2A6;
-  color: #7e5200;
-  box-shadow: 0 0 5px black;
-  transform: scale(1.03)
-}
-
-.img-lianas {
-  position: absolute;
-  width: 300px;
-  box-shadow: none;
-  z-index: 2;
-  display: flex;
-  width: 100%;
-  z-index: inherit;
-  filter: saturate(10%) brightness(20%);
-  opacity: 0.3;
-}
-
-
-
-.granos {
-  position: absolute;
-  width: 100px;
-  z-index: 1;
-  opacity: 0.6;
-}
-.granos.gra1 {
-  min-width: 100px;
-  top: 80%;
-  left: 0%;
-  transform: translate(-80%, 0%);
-}
-.granos.gra2 {
-  top: 70%;
-  left: 80%;
-  transform: translate(150%, 0%) rotate(-60deg);
-
-}
-.granos.gra3{
-  top: -10%;
-  left: 93%;
-  transform: rotate(-1200deg);
-}
 

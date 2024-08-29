@@ -1,3 +1,5 @@
+
+
 import { Navbar } from '../components/navbbar';
 import { BtnRecommend } from '../components/Btns';
 import { EtiquetaOferta } from '../components/EtiquetaOferta';
@@ -5,12 +7,16 @@ import { EtiquetaCatalogo } from '../components/etiquetacatalogo';
 import { EtiquetaSede } from '../components/EtiquetaSede';
 import { Foot } from '../components/footerInfo';
 
+import '../styles/styled_homepage.css'
 import imagen from '../assets/pngs/lianzas1.png'
 import imggranos from '../assets/pngs/semilla-de-cafe.png'
 import imggranos2 from '../assets/pngs/Grano de cafe.png'
+import greenbrush from '../assets/pngs/green_brush.png'
 import { ScrollToTop } from '../components/ScrollTop';
 
 export const Home = ()=>{
+
+
     return (
         <>
         <ScrollToTop />
@@ -20,10 +26,15 @@ export const Home = ()=>{
         <main>
             <section id="container-introduction">
                 <section id="wrapper-home-img">
-                    <img src="https://images.unsplash.com/photo-1518552782168-0396d0079475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"alt="1. imagen"></img>
-                    <img src="https://images.unsplash.com/photo-1495862433577-132cf20d7902?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="2. imagen"></img>
+                    <div id="img-wrapper">
+                        <img src="https://images.unsplash.com/photo-1518552782168-0396d0079475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"alt="1. imagen"></img>
+                        <img src="https://images.unsplash.com/photo-1495862433577-132cf20d7902?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="2. imagen"></img>
+                        <img src="https://images.unsplash.com/photo-1518552782168-0396d0079475?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"alt="1. imagen"></img>
+                        <img src="https://images.unsplash.com/photo-1495862433577-132cf20d7902?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="2. imagen"></img>
+
+                    </div>
                     <section id="wrapper-home-entrada">
-                        <h2>!Good morningQ¡</h2>
+                    <h2>!Good morningQ¡</h2>
                         <p>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
                             Pellentesque finibus, libero nec molestie ultrices, dui ligula consequat justo,
@@ -31,6 +42,7 @@ export const Home = ()=>{
                         </p>
                     </section>
                 </section>
+
 
                 <section id="container-home-text">
                     <div id="wrapper-home-text">
@@ -62,6 +74,7 @@ export const Home = ()=>{
             </section>
             <section id="ofertas">
                 <EtiquetaOferta />
+                <img className="oferta-img brush"src={greenbrush}></img>
             </section>
             <section id="promo">
                 <div id="container-promo">

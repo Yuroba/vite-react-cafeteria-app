@@ -29,8 +29,8 @@ export const Navbar = ()=>{
                         <li><a href="#Sedes">Sedes</a></li>
                         <li><a href="#ofertas">Ofertas</a></li>
                         <li><a href="#recommend">Recomendado</a></li>
-                        <li><a href="#Promo">Promo</a></li>
-                        <li><a href="#Contacto">Contacto</a></li>
+                        <li><a href="#ofertas">Ofertas</a></li>
+                        <li><a href="#foot">Contacto</a></li>
                     </ol>
                 </li>
                 <li>
