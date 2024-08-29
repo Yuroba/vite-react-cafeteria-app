@@ -1,8 +1,8 @@
 #container-catalogo {
-    width: min-content;
-    min-width: 250px;
+    
+    width: fit-content;
     height: min-content;
-    background: linear-gradient(0deg, rgba(42,1,79,0.1), rgba(42,1,79,0.1)), #ffe2c9;
+    
     display: flex;
     flex-direction: column;
     border-radius: 29px;
@@ -11,7 +11,7 @@
 
 #wrapper-catalogo-img figure {
     width: 100%;
-    max-width: 220px;
+    max-width: 180px;
     min-width: 110px;
     height: 180px;
     margin: 15px auto;
@@ -22,7 +22,7 @@
     color: black;
     display: flex;
     flex-direction: column;
-    
+    background: linear-gradient(0deg, rgba(42,1,79,0.1), rgba(42,1,79,0.1)), #ffe2c9;
     align-items: center;
 }
 #wrapper-catalogo-text h3 {
@@ -41,6 +41,7 @@
 }
 #wrapper-catalogo-text p {
     font-family: "Kotta One";
-    margin: 15px 0;
+    margin: 15px auto;
     font-size: 13px;
+    width: 50%;
 }

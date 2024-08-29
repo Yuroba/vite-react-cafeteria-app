@@ -4,23 +4,37 @@ import { BtnPedir } from "./Btns"
 import '../styles/styled_EtiquetaOferta.css'
 
 export const EtiquetaOferta = ()=>{
-    const [checkObserve, setCheckObserve] = useState(false)
 
-    const ofertaCheck = useRef(null)
-    function checkOferta(entry){
-        console.log(entry)
+    const elementCheck = useRef(null)
+
+    function checkOferta(entries){
+        entries.forEach(entry => {
+            console.log(entry, entry.isIntersecting)
+            entry.target.classList.toggle("show",entry.isIntersecting)
+        })
     }
 
-    const options = {
-        root: null,
-        rootMargin: "0px",
-        threshold: 1
-    }
-    const observer = new IntersectionObserver(checkOferta, options)
-    observer.observe(ofertaCheck)
+    useEffect(()=> {
+        const observer = new IntersectionObserver(checkOferta, {
+            threshold:0.1,
+            rootMargin: "-50px",
+        });
+
+        const currentElement = elementCheck.current;
+
+        if (currentElement) {
+            observer.observe(currentElement)
+        };
+
+        return () => {
+            if (currentElement) {
+                observer.unobserve(currentElement)
+            }
+        }
+    }, [])
     return (
         <div id="container-oferta">
-            <div id="content-oferta">
+            <div id="content-oferta" ref={elementCheck}>
                 <div id="wrapper-oferta">
                     <section id="content-text">
                         <h3>25% de descuento</h3>
