@@ -3,6 +3,8 @@
     max-width: 100vw;
     min-width: 500px;
     min-height: 100vh;
+    max-height: 100%;
+    
     grid-template-columns: 60% 40%;
     /* background-color: #FFEBCA; */
   }
@@ -97,20 +99,21 @@
     
   }
   #container-recommend {
-    width: 100%;
-    max-width: 850px;
+    width: 50%;
+    max-width: min-content;
     min-width: 200px;
-    margin: auto;
+    margin: 0 auto;
+   
   }
   #wrapper-recommend {
     display: flex;
     width: 100%;
     column-gap: 50px;
     overflow-x: auto;
-
     justify-content: left;
+
   }
-  
+
   /* Contenedor de oferta */
   
   #ofertas {
@@ -138,52 +141,7 @@
     position:relative;
     overflow: hidden;
   }
-  #container-promo {
-    width: 80vw;
-    min-height: 300px;
-    border: 1px solid black;
-    background: radial-gradient(10% 50% at 50% 70%, #FFF2A0 50%,#FF9D2E 100%,#B0631B 150%,#5F2607 300%, #210101 498% );
-    z-index: 1;
-    padding: 10px 0px;
-  }
-  #wrapper-promo h1 {
-    text-align: center;
-    background: linear-gradient(90deg, #FCD58B 45%, #FFFFFF 50.5%, #FCD58B 62.5%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    font-style: italic;
-    font-size: 50px;
-  }
-  
-  #wrapper-promo form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    align-items: center;
-    margin: 30px auto;
-    row-gap: 30px;
-  }
-  #wrapper-promo form input {
-    width: 400px;
-    height: 39px;
-  }
-  #wrapper-promo form button {
-    background-color: #8C4A1E;
-    border: 2px solid #FFD2A6;
-    color: #FFC250;
-    width: 150px;
-    height: 51px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.6s ease;
-  }
-  #wrapper-promo form button:hover {
-    background-color: #FFD2A6;
-    color: #7e5200;
-    box-shadow: 0 0 5px black;
-    transform: scale(1.03)
-  }
+
   
   .img-lianas {
     position: absolute;

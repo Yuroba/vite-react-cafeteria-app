@@ -1,13 +1,15 @@
 #container-catalogo {
     
-    width: fit-content;
+    min-width: 210px;
     height: min-content;
     
     display: flex;
     flex-direction: column;
     border-radius: 29px;
     padding: 10px 0px;
+
 }
+
 
 #wrapper-catalogo-img figure {
     width: 100%;
@@ -22,26 +24,24 @@
     color: black;
     display: flex;
     flex-direction: column;
-    background: linear-gradient(0deg, rgba(42,1,79,0.1), rgba(42,1,79,0.1)), #ffe2c9;
+    background:  #ffe5ce;
     align-items: center;
 }
 #wrapper-catalogo-text h3 {
     font-family: Koulen;
-    background: linear-gradient(0deg, rgba(15,2,64,0.2),rgba(15,2,64,0.2)), #ffffff;
+    background: #ffffff;
     font-size: 21px;
     font-weight: lighter;
     margin: 0;
+    border-radius: 9px;
 }
 #wrapper-catalogo-text > div {
     width: 100%;
 }
-#wrapper-catalogo-text > div:nth-of-type(2) > h3{
-    font-size: 21px;
-    margin: 0 10px;
-}
+
 #wrapper-catalogo-text p {
     font-family: "Kotta One";
     margin: 15px auto;
     font-size: 13px;
-    width: 50%;
+    width: 60%;
 }

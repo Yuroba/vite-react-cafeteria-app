@@ -9,7 +9,7 @@ export const EtiquetaOferta = ()=>{
 
     function checkOferta(entries){
         entries.forEach(entry => {
-            console.log(entry, entry.isIntersecting)
+            
             entry.target.classList.toggle("show",entry.isIntersecting)
         })
     }

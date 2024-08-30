@@ -1,9 +1,9 @@
 
 #container-foot {
     background:  linear-gradient(0deg, rgba(24, 0, 50, 0.3), rgba(24, 0, 50, 0.3)), linear-gradient(0deg, rgba(40, 25, 1, 0.78), rgba(40, 25, 1, 0.78)), url("https://images.unsplash.com/photo-1616666398260-ce26b6ad6b6f?q=80&w=1796&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    height: 50vh;
+    min-height: 50vh;
     position:relative;
-    padding: 0 96px;
+    padding:  46px 96px;
 }
 #wrapper-foot {
     display: flex;
